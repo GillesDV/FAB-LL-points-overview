@@ -1,0 +1,20 @@
+[
+  {
+    "cardIdentifier": "victor-goldmane-high-and-mighty",
+    "name": "Victor Goldmane, High and Mighty",
+    "livingLegendPoints": 899,
+    "releaseDate": "2024-02-02"
+  },
+  {
+    "cardIdentifier": "cindra-dracai-of-retribution",
+    "name": "Cindra, Dracai of Retribution",
+    "livingLegendPoints": 820,
+    "releaseDate": "2025-01-31"
+  },
+  {
+    "cardIdentifier": "dorinthea-ironsong",
+    "name": "Dorinthea, Ironsong",
+    "livingLegendPoints": 743,
+    "releaseDate": "2019-10-11"
+  }
+]
