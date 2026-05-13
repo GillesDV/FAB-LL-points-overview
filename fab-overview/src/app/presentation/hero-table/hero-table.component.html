@@ -1,0 +1,39 @@
+<section class="table-region" aria-label="Hero points table">
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Name</th>
+          <th scope="col">LL points</th>
+
+          <th scope="col">World Championship <br> Pro Tour</th>
+          <th scope="col">Calling <br> US Nationals</th>
+          <th scope="col">Nationals (24-32)</th>
+          <th scope="col">Nats (64-80)</th>
+          <th scope="col">Nats (96-160)</th>
+          <th scope="col">Battlegrounds</th>
+          <th scope="col">Pro Quest + <br>World Qualifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (hero of heroes ?? []; track hero.cardIdentifier) {
+        <tr>
+          <td>
+            <span class="avatar" aria-hidden="true">{{ getInitials(hero) }}</span>
+          </td>
+          <td class="hero-name">{{ hero.name }}</td>
+          <td>{{ hero.livingLegendPoints }}</td>
+          @for (column of extraColumns; track column) {
+          <td class="empty-value">-</td>
+          }
+        </tr>
+        } @empty {
+        <tr>
+          <td class="empty-state" colspan="10">No heroes available.</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</section>

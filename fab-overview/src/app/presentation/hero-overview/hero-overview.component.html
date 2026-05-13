@@ -1,0 +1,22 @@
+<main class="overview">
+  <section class="intro" aria-labelledby="overview-title">
+    <h1 id="overview-title">Living Legend Points Overview</h1>
+    <p>
+      Heroes reach Living Legend status after earning 1,000 points. They earn points by winning larger events such as
+      Skirmishes, Battle Hardeneds, and Callings. The table below shows how many events they have to currently win
+      before they become LL. <br> For more information see the official <a [href]="'https://fabtcg.com/living-legend/'"
+        target="_blank" rel="noopener noreferrer">Living Legend page</a>.
+    </p>
+  </section>
+
+  <app-hero-table [heroes]="heroes$ | async"></app-hero-table>
+</main>
+
+<footer class="footer">
+  <p>&copy; This website is in no way affiliated with <a [href]="'https://www.legendstorystudios.com/'" target="_blank"
+      rel="noopener noreferrer">Legend Story Studios</a>®. <a [href]="'https://www.legendstorystudios.com/'"
+      target="_blank" rel="noopener noreferrer">Flesh and Blood™</a>
+    is a registered trademarks of Legend Story Studios. Flesh and Blood™ and all associated images are copyright ©
+    Legend
+    Story Studios. All rights reserved.</p>
+</footer>

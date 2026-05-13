@@ -1,0 +1,74 @@
+:host {
+  display: block;
+}
+
+.table-region {
+  border: 1px solid rgba(249, 230, 159, 0.24);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(249, 230, 159, 0.04);
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(249, 230, 159, 0.16);
+  color: #f9e69f;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+th {
+  background: rgba(249, 230, 159, 0.1);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+tbody tr:hover {
+  background: rgba(249, 230, 159, 0.06);
+}
+
+.avatar {
+  display: inline-grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(249, 230, 159, 0.55);
+  border-radius: 50%;
+  background: #2b1005;
+  color: #f9e69f;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hero-name {
+  font-weight: 700;
+}
+
+.empty-value {
+  color: rgba(249, 230, 159, 0.52);
+  text-align: center;
+}
+
+.empty-state {
+  padding: 28px 16px;
+  color: rgba(249, 230, 159, 0.7);
+  text-align: center;
+}
