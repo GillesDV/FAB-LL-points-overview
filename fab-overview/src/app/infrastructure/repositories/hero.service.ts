@@ -20,7 +20,7 @@ export class HeroService {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly allHeroesUrl = '/data/allHeroes.json';
 
-  constructor(private readonly http: HttpClient) {}
+  constructor(private readonly http: HttpClient) { }
 
   getAll(): Observable<readonly Hero[]> {
     if (!isPlatformBrowser(this.platformId)) {
@@ -29,7 +29,10 @@ export class HeroService {
 
     return this.http
       .get<readonly HeroDto[]>(this.allHeroesUrl)
-      .pipe(map((heroes) => heroes.map((hero) => this.toHero(hero))));
+      .pipe(map((heroes) => heroes
+        .map((hero) => this.toHero(hero))
+        .sort((a, b) => b.livingLegendPoints - a.livingLegendPoints)
+      ));
   }
 
   private toHero(hero: HeroDto): Hero {

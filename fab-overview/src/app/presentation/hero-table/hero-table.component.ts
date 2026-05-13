@@ -10,16 +10,6 @@ import { Hero } from '../../domain/models/hero.model';
 export class HeroTableComponent {
   @Input() heroes: readonly Hero[] | null = [];
 
-  protected readonly extraColumns = [
-    'Week 1',
-    'Week 2',
-    'Week 3',
-    'Week 4',
-    'Week 5',
-    'Week 6',
-    'Week 7',
-  ];
-
   protected getInitials(hero: Hero): string {
     return hero.name
       .split(' ')
@@ -29,4 +19,37 @@ export class HeroTableComponent {
       .join('')
       .toUpperCase();
   }
+
+  protected getLivingLegendPointsPerEvent(basePoints: number, releaseDate: Date): number {
+    let multiplier = this.getMultiplier(releaseDate);
+
+    return basePoints * multiplier;
+  }
+
+  private getMultiplier(date: Date): number {
+    const now = new Date();
+
+    const yearsDifference =
+      (now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24 * 365.25);
+
+    if (yearsDifference < 1) {
+      return 0.5;
+    }
+
+    if (yearsDifference < 2) {
+      return 1.0;
+    }
+
+    return 1.5;
+  }
+
+  getRemainingEventsToComplete(livingLegendPoints: number, basePoints: number, releaseDate: Date) {
+    const pointsPerEvent = this.getLivingLegendPointsPerEvent(basePoints, releaseDate);
+
+    //TODO do I want decimals or not? idk
+    const remainingEvents = Math.ceil((1000 - livingLegendPoints) / pointsPerEvent); //.toFixed(2); 
+
+    return remainingEvents;
+  }
+
 }

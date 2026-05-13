@@ -24,9 +24,27 @@
           </td>
           <td class="hero-name">{{ hero.name }}</td>
           <td>{{ hero.livingLegendPoints }}</td>
-          @for (column of extraColumns; track column) {
-          <td class="empty-value">-</td>
-          }
+          <td [title]="'1 win = ' + getLivingLegendPointsPerEvent(100, hero.releaseDate) + ' points'">
+            {{getRemainingEventsToComplete(hero.livingLegendPoints, 100, hero.releaseDate) }}
+          </td>
+          <td [title]="'1 win = ' + getLivingLegendPointsPerEvent(50, hero.releaseDate) + ' points'">
+            {{getRemainingEventsToComplete(hero.livingLegendPoints, 50, hero.releaseDate) }}
+          </td>
+          <td [title]="'1 win = ' + getLivingLegendPointsPerEvent(25, hero.releaseDate) + ' points'">
+            {{getRemainingEventsToComplete(hero.livingLegendPoints, 25, hero.releaseDate) }}
+          </td>
+          <td [title]="'1 win = ' + getLivingLegendPointsPerEvent(10, hero.releaseDate) + ' points'">
+            {{getRemainingEventsToComplete(hero.livingLegendPoints, 10, hero.releaseDate) }}
+          </td>
+          <td [title]="'1 win = ' + getLivingLegendPointsPerEvent(5, hero.releaseDate) + ' points'">
+            {{getRemainingEventsToComplete(hero.livingLegendPoints, 5, hero.releaseDate) }}
+          </td>
+          <td [title]="'1 win = ' + getLivingLegendPointsPerEvent(10, hero.releaseDate) + ' points'">
+            {{getRemainingEventsToComplete(hero.livingLegendPoints, 10, hero.releaseDate) }}
+          </td>
+          <td [title]="'1 win = ' + getLivingLegendPointsPerEvent(5, hero.releaseDate) + ' points'">
+            {{getRemainingEventsToComplete(hero.livingLegendPoints, 5, hero.releaseDate) }}
+          </td>
         </tr>
         } @empty {
         <tr>
