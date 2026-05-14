@@ -10,6 +10,11 @@ import { Hero } from '../../domain/models/hero.model';
 export class HeroTableComponent {
   @Input() heroes: readonly Hero[] | null = [];
 
+  protected get sortedHeroes(): readonly Hero[] {
+    return [...(this.heroes ?? [])]
+      .sort((first, second) => second.livingLegendPoints - first.livingLegendPoints);
+  }
+
   protected getInitials(hero: Hero): string {
     return hero.name
       .split(' ')

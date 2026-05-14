@@ -23,3 +23,10 @@ The amount of points earned depends on which event they win and how recently rel
 | Less than 1 year | * 0.5 |
 | 1-2 years | * 1.0 |
 | 2+ years | * 1.5 |
+
+# How easily to update LL points
+Living Legend points get updated once per week on Monday night (West EU time). Sadly there is no API available for this, official or fan-made. Thus a little script was made for this to auto-magically inject it into the app. 
+- Go to https://fabtcg.com/living-legend/ 
+- Scroll down to the `Living Legend Leaderboard – Classic Constructed` header
+- copy the entire table and paste it into `tools/input.txt`
+- run `python script.py`

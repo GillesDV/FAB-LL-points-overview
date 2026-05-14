@@ -17,7 +17,7 @@
         </tr>
       </thead>
       <tbody>
-        @for (hero of heroes ?? []; track hero.cardIdentifier) {
+        @for (hero of sortedHeroes; track hero.cardIdentifier) {
         <tr>
           <td>
             <span class="avatar" aria-hidden="true">{{ getInitials(hero) }}</span>

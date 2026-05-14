@@ -30,3 +30,5 @@ yarn-error.log*
 fab-overview/.vscode/
 
 *.log
+
+tools/__pycache__/
