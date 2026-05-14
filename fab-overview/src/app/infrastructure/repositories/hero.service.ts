@@ -1,16 +1,14 @@
 import { isPlatformBrowser } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { Injectable, PLATFORM_ID, inject } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { map } from 'rxjs/operators';
-
+import { cards } from '@flesh-and-blood/cards';
+import { Format, Type } from '@flesh-and-blood/types';
+import heroLivingLegendPoints from '../../../../public/data/heroLivingLegendPoints.json';
 import { Hero } from '../../domain/models/hero.model';
+import { ReleaseDateHelper } from '../../shared/helpers/release-date.helper';
 
-interface HeroDto {
-  cardIdentifier: string;
+interface HeroLivingLegendPointsDto {
   name: string;
   livingLegendPoints: number;
-  releaseDate: string;
 }
 
 @Injectable({
@@ -18,27 +16,31 @@ interface HeroDto {
 })
 export class HeroService {
   private readonly platformId = inject(PLATFORM_ID);
-  private readonly allHeroesUrl = '/data/allHeroes.json';
+  private readonly livingLegendPointsByHeroName = new Map(
+    (heroLivingLegendPoints as readonly HeroLivingLegendPointsDto[])
+      .map((hero) => [hero.name, hero.livingLegendPoints] as const),
+  );
 
-  constructor(private readonly http: HttpClient) { }
-
-  getAll(): Observable<readonly Hero[]> {
+  getAll(): readonly Hero[] {
     if (!isPlatformBrowser(this.platformId)) {
-      return of([]);
+      return [];
     }
 
-    return this.http
-      .get<readonly HeroDto[]>(this.allHeroesUrl)
-      .pipe(map((heroes) => heroes
-        .map((hero) => this.toHero(hero))
-        .sort((a, b) => b.livingLegendPoints - a.livingLegendPoints)
-      ));
-  }
+    const allHeroes: Hero[] = [];
 
-  private toHero(hero: HeroDto): Hero {
-    return {
-      ...hero,
-      releaseDate: new Date(hero.releaseDate),
-    };
+    cards.forEach((card) => {
+      if (card.types.includes(Type.Hero) && !card.young &&
+        card.legalFormats.includes(Format.ClassicConstructed)) {
+
+        allHeroes.push({
+          cardIdentifier: card.cardIdentifier,
+          name: card.name,
+          livingLegendPoints: this.livingLegendPointsByHeroName.get(card.name) ?? 0,
+          releaseDate: ReleaseDateHelper.getReleaseDate(card.sets),
+        });
+      }
+    });
+
+    return allHeroes;
   }
 }

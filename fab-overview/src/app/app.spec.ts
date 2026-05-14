@@ -30,8 +30,7 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
 
-    const request = httpTesting.expectOne('/data/allHeroes.json');
-    request.flush([]);
+    httpTesting.expectNone('/data/allHeroes.json');
 
     await fixture.whenStable();
 
