@@ -30,3 +30,7 @@ Living Legend points get updated once per week on Monday night (West EU time). S
 - Scroll down to the `Living Legend Leaderboard – Classic Constructed` header
 - copy the entire table and paste it into `tools/input.txt`
 - run `python script.py`
+
+## TODO / To Improve
+- add avatars instead of dumb name abbreviations as icons
+- Look into reducing total files. <br> The big sinner is `@flesh-and-blood/cards`. It's a handy npm package that automatically gives all the hero-related data, since it's open source and thus automagically gets updated (by others), but it's 9.1MB worth of data. Aka 96% of the total size. 

@@ -29,6 +29,7 @@
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
+            "outputPath": "docs",
             "ssr": {
               "entry": "src/server.ts"
             }
@@ -38,8 +39,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "1MB",
+                  "maximumError": "15MB"
                 },
                 {
                   "type": "anyComponentStyle",
