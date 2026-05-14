@@ -6,6 +6,8 @@ Heroes reach Living Legend status after earning 1 000 points. They earn points b
 
 The amount of points earned depends on which event they win and how recently released they are. This web app is meant to quickly show how many events they would have to win before they would become LL.
 
+URL: https://gillesdv.github.io/FAB-LL-points-overview/ 
+
 ## Points earned per event
 | Event Type | Points per event |
 |--|--|

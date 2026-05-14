@@ -18,7 +18,7 @@ interface HeroLivingLegendPointsDto {
 })
 export class HeroService {
   private readonly platformId = inject(PLATFORM_ID);
-  private readonly heroLivingLegendPointsUrl = '/data/heroLivingLegendPoints.json';
+  private readonly heroLivingLegendPointsUrl = 'data/heroLivingLegendPoints.json';
 
   constructor(private readonly http: HttpClient) { }
 
