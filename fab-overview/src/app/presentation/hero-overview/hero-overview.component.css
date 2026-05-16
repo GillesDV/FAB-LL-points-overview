@@ -55,3 +55,8 @@
     font-size: 2rem;
   }
 }
+
+a[href] {
+  color: #A40F0E;
+  text-decoration: underline;
+}
