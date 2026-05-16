@@ -20,7 +20,7 @@
         @for (hero of sortedHeroes; track hero.cardIdentifier) {
         <tr>
           <td>
-            <span class="avatar" aria-hidden="true">{{ getInitials(hero) }}</span>
+            <img class="avatar" [src]="getAvatarUrl(hero)" [alt]="hero.name + ' avatar'" />
           </td>
           <td class="hero-name">{{ hero.name }}</td>
           <td>{{ hero.livingLegendPoints }}</td>

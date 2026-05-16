@@ -15,14 +15,20 @@ export class HeroTableComponent {
       .sort((first, second) => second.livingLegendPoints - first.livingLegendPoints);
   }
 
-  protected getInitials(hero: Hero): string {
-    return hero.name
-      .split(' ')
-      .filter(Boolean)
-      .slice(0, 2)
-      .map((part) => part[0])
-      .join('')
-      .toUpperCase();
+  protected getAvatarUrl(hero: Hero): string {
+    return `data/avatars/${this.toAvatarFileName(hero.name)}.webp`;
+  }
+
+  private toAvatarFileName(name: string): string {
+    return name
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/ð/g, 'd')
+      .replace(/Ð/g, 'd')
+      .toLowerCase()
+      .replace(/[!/'’‘`]/g, '')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
   }
 
   protected getLivingLegendPointsPerEvent(basePoints: number, releaseDate: Date): number {

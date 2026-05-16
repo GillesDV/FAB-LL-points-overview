@@ -46,16 +46,13 @@ tbody tr:hover {
 }
 
 .avatar {
-  display: inline-grid;
-  width: 40px;
-  height: 40px;
-  place-items: center;
+  display: block;
+  width: 50px;
+  height: 50px;
   border: 1px solid rgba(249, 230, 159, 0.55);
-  border-radius: 50%;
+  border-radius: 8px;
   background: #2b1005;
-  color: #f9e69f;
-  font-size: 0.85rem;
-  font-weight: 700;
+  object-fit: cover;
 }
 
 .hero-name {
