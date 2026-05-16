@@ -7,7 +7,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT_FILE = ROOT / "tools" / "input.txt"
-OUTPUT_FILE = ROOT / "fab-overview" / "public" / "data" / "heroLivingLegendPoints.json"
+OUTPUT_FILE = ROOT / "fab-overview" / "public" / \
+    "data" / "heroLivingLegendPoints.json"
 
 
 def parse_living_legend_points(input_file: Path) -> list[dict[str, int | str]]:
@@ -20,7 +21,10 @@ def parse_living_legend_points(input_file: Path) -> list[dict[str, int | str]]:
             if len(row) < 4:
                 continue
 
-            name = row[1].strip()
+            name = (row[1].strip()
+                    # Replace the quotes for Maxx 'The Hype' Nitro's name. So that the mapping later goes smoothly
+                    .replace("\u2018", "'").replace("\u2019", "'")
+                    )
             living_legend_points = row[3].strip()
 
             if not name or not living_legend_points.isdigit():
