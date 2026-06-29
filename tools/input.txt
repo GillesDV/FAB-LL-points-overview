@@ -1,35 +1,37 @@
-1	Prism, Awakener of Sol	77	951
-2	Victor Goldmane, High and Mighty	284	899
-3	Fai, Rising Rebellion	35	856
-4	Kassai of the Golden Sand	152	839
-5	Dash I/O	324	830
-6	Cindra, Dracai of Retribution	42	820
-7	Bravo, Showstopper	7	776
-8	Katsu, the Wanderer	56	746
-9	Dorinthea Ironsong	35	743
-10	Arakni, Marionette	281	644
-11	Oscilio, Constella Intelligence	243	536
-12	Ser Boltyn, Breaker of Dawn	28	417
-13	Gravy Bones, Shipwrecked Looter	33	409
-14	Uzuri, Switchblade		405
-15	Rhinar, Reckless Rampage	14	362
-16	Vynnset, Iron Maiden	84	259
-17	Arakni, Huntsman	188	244
-18	Jarl Vetreiði	47	203
-19	Levia, Shadowborn Abomination	7	200
-20	Arakni, 5L!p3d 7hRu 7h3 cR4X	14	193
-21	Fang, Dracai of Blades	14	153
-22	Ira, Scarlet Revenger	24	126
-23	Riptide, Lurker of the Deep	7	98
-24	Maxx ‘The Hype’ Nitro		85
-25	Pleiades, Superstar	24	45
-26	Teklovossen, Esteemed Magnate	14	41
-27	Kayo, Underhanded Cheat	12	29
-28	Valda, Seismic Impact	21	28
-29	Marlynn, Treasure Hunter	14	21
-30	Puffin, Hightail	7	18
-31	Betsy, Skin in the Game		7
+1	Victor Goldmane, High and Mighty	53	951
+2	Kassai of the Golden Sand	53	892
+3	Dash I/O	45	875
+4	Fai, Rising Rebellion		856
+5	Cindra, Dracai of Retribution	25	845
+6	Bravo, Showstopper		776
+7	Katsu, the Wanderer		746
+8	Dorinthea Ironsong		743
+9	Oscilio, Constella Intelligence	80	666
+10	Arakni, Marionette		644
+11	Gravy Bones, Shipwrecked Looter	85	494
+12	Ser Boltyn, Breaker of Dawn		417
+13	Uzuri, Switchblade		405
+14	Rhinar, Reckless Rampage		362
+15	Vynnset, Iron Maiden	8	266
+16	Arakni, Huntsman		244
+17	Jarl Vetreiði	20	223
+18	Levia, Shadowborn Abomination		200
+19	Arakni, 5L!p3d 7hRu 7h3 cR4X		193
+20	Fang, Dracai of Blades		153
+21	Ira, Scarlet Revenger	5	131
+22	Riptide, Lurker of the Deep		98
+23	Maxx ‘The Hype’ Nitro		85
+24	Teklovossen, Esteemed Magnate	8	49
+25	Pleiades, Superstar		45
+26	Kayo, Underhanded Cheat		29
+27	Valda, Seismic Impact		28
+27	Puffin, Hightail	10	28
+29	Marlynn, Treasure Hunter		21
+30	Zyggy Starlight	8	8
 31	Olympia, Prized Fighter		7
-33	Tuffnut, Bumbling Hulkster	5	5
+31	Betsy, Skin in the Game		7
+33	Tuffnut, Bumbling Hulkster		5
 34	Lyath Goldmane, Vile Savant		3
+–	Aurora, Legacy of Tempest		
 –	Hala, Bladesaint of the Vow		
+–	Oscilio, Forked Continuum	

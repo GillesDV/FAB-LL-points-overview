@@ -1,27 +1,23 @@
 [
   {
-    "name": "Prism, Awakener of Sol",
+    "name": "Victor Goldmane, High and Mighty",
     "livingLegendPoints": 951
   },
   {
-    "name": "Victor Goldmane, High and Mighty",
-    "livingLegendPoints": 899
+    "name": "Kassai of the Golden Sand",
+    "livingLegendPoints": 892
+  },
+  {
+    "name": "Dash I/O",
+    "livingLegendPoints": 875
   },
   {
     "name": "Fai, Rising Rebellion",
     "livingLegendPoints": 856
   },
   {
-    "name": "Kassai of the Golden Sand",
-    "livingLegendPoints": 839
-  },
-  {
-    "name": "Dash I/O",
-    "livingLegendPoints": 830
-  },
-  {
     "name": "Cindra, Dracai of Retribution",
-    "livingLegendPoints": 820
+    "livingLegendPoints": 845
   },
   {
     "name": "Bravo, Showstopper",
@@ -36,20 +32,20 @@
     "livingLegendPoints": 743
   },
   {
+    "name": "Oscilio, Constella Intelligence",
+    "livingLegendPoints": 666
+  },
+  {
     "name": "Arakni, Marionette",
     "livingLegendPoints": 644
   },
   {
-    "name": "Oscilio, Constella Intelligence",
-    "livingLegendPoints": 536
+    "name": "Gravy Bones, Shipwrecked Looter",
+    "livingLegendPoints": 494
   },
   {
     "name": "Ser Boltyn, Breaker of Dawn",
     "livingLegendPoints": 417
-  },
-  {
-    "name": "Gravy Bones, Shipwrecked Looter",
-    "livingLegendPoints": 409
   },
   {
     "name": "Uzuri, Switchblade",
@@ -61,7 +57,7 @@
   },
   {
     "name": "Vynnset, Iron Maiden",
-    "livingLegendPoints": 259
+    "livingLegendPoints": 266
   },
   {
     "name": "Arakni, Huntsman",
@@ -69,7 +65,7 @@
   },
   {
     "name": "Jarl Vetreiði",
-    "livingLegendPoints": 203
+    "livingLegendPoints": 223
   },
   {
     "name": "Levia, Shadowborn Abomination",
@@ -85,7 +81,7 @@
   },
   {
     "name": "Ira, Scarlet Revenger",
-    "livingLegendPoints": 126
+    "livingLegendPoints": 131
   },
   {
     "name": "Riptide, Lurker of the Deep",
@@ -96,12 +92,12 @@
     "livingLegendPoints": 85
   },
   {
-    "name": "Pleiades, Superstar",
-    "livingLegendPoints": 45
+    "name": "Teklovossen, Esteemed Magnate",
+    "livingLegendPoints": 49
   },
   {
-    "name": "Teklovossen, Esteemed Magnate",
-    "livingLegendPoints": 41
+    "name": "Pleiades, Superstar",
+    "livingLegendPoints": 45
   },
   {
     "name": "Kayo, Underhanded Cheat",
@@ -112,19 +108,23 @@
     "livingLegendPoints": 28
   },
   {
+    "name": "Puffin, Hightail",
+    "livingLegendPoints": 28
+  },
+  {
     "name": "Marlynn, Treasure Hunter",
     "livingLegendPoints": 21
   },
   {
-    "name": "Puffin, Hightail",
-    "livingLegendPoints": 18
-  },
-  {
-    "name": "Betsy, Skin in the Game",
-    "livingLegendPoints": 7
+    "name": "Zyggy Starlight",
+    "livingLegendPoints": 8
   },
   {
     "name": "Olympia, Prized Fighter",
+    "livingLegendPoints": 7
+  },
+  {
+    "name": "Betsy, Skin in the Game",
     "livingLegendPoints": 7
   },
   {
